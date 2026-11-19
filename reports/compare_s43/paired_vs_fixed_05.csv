@@ -1,0 +1,6 @@
+﻿seed,baseline_run,candidate_run,candidate_group,baseline_best_acc,candidate_best_acc,delta_acc_pp,delta_i2t_error_count,baseline_best_map,candidate_best_map,delta_map_pp,comparable_hyperparams
+43,fixed_a0.50_s43,adaptive_tau0.50_s43,adaptive_t0.50,0.9614,0.9606,-0.08,4,0.985133,0.985537,0.0404,True
+43,fixed_a0.50_s43,adaptive_tau1.00_s43,adaptive_t1.00,0.9614,0.9608,-0.06,3,0.985133,0.985402,0.0269,True
+43,fixed_a0.50_s43,adaptive_tau2.00_s43,adaptive_t2.00,0.9614,0.961,-0.04,2,0.985133,0.985313,0.018,True
+43,fixed_a0.50_s43,fixed_a0.30_s43,fixed_a0.30,0.9614,0.9626,0.12,-6,0.985133,0.984813,-0.032,True
+43,fixed_a0.50_s43,fixed_a0.70_s43,fixed_a0.70,0.9614,0.961,-0.04,2,0.985133,0.985413,0.028,True

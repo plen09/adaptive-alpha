@@ -1,0 +1,289 @@
+=== TRAIN fixed alpha=0.3 seed=43 ===
+D:\Program Files\anaconda\Lib\site-packages\torchvision\datasets\cifar.py:83: VisibleDeprecationWarning: dtype(): align should be passed as Python or NumPy boolean but got `align=0`. Did you mean to pass a tuple to create a subarray type? (Deprecated NumPy 2.4)
+  entry = pickle.load(f, encoding="latin1")
+Device=cuda; AMP=True; model=ViT-B-32-quickgelu; pretrained=./weights/open_clip_model.safetensors
+Class prompts: ['a photo of a airplane.', 'a photo of a car.', 'a photo of a bird.', 'a photo of a cat.', 'a photo of a deer.', 'a photo of a dog.', 'a photo of a frog.', 'a photo of a horse.', 'a photo of a ship.', 'a photo of a truck.']
+Trainable parameters: 14,570,496
+Epoch 0 (pretrained): {'acc_i2t': 0.8898, 'map_t2i': 0.879432, 'score': 0.884616}
+Epoch 1: alpha=0.300 I2T=0.2122 T2I=0.2752 val_acc=0.9574 val_mAP=0.9842 time=38.9s
+Epoch 2: alpha=0.300 I2T=0.1605 T2I=0.1869 val_acc=0.9592 val_mAP=0.9856 time=30.8s
+Epoch 3: alpha=0.300 I2T=0.1402 T2I=0.1635 val_acc=0.9626 val_mAP=0.9848 time=29.9s
+Epoch 4: alpha=0.300 I2T=0.1243 T2I=0.1449 val_acc=0.9592 val_mAP=0.9861 time=29.5s
+Epoch 5: alpha=0.300 I2T=0.1126 T2I=0.1313 val_acc=0.9572 val_mAP=0.9810 time=30.1s
+Saved: runs_s43\fixed_a0.30_s43
+Best validation epoch: 3 {'acc_i2t': 0.9626, 'map_t2i': 0.984813, 'score': 0.973706}
+=== TRAIN fixed alpha=0.5 seed=43 ===
+D:\Program Files\anaconda\Lib\site-packages\torchvision\datasets\cifar.py:83: VisibleDeprecationWarning: dtype(): align should be passed as Python or NumPy boolean but got `align=0`. Did you mean to pass a tuple to create a subarray type? (Deprecated NumPy 2.4)
+  entry = pickle.load(f, encoding="latin1")
+Device=cuda; AMP=True; model=ViT-B-32-quickgelu; pretrained=./weights/open_clip_model.safetensors
+Class prompts: ['a photo of a airplane.', 'a photo of a car.', 'a photo of a bird.', 'a photo of a cat.', 'a photo of a deer.', 'a photo of a dog.', 'a photo of a frog.', 'a photo of a horse.', 'a photo of a ship.', 'a photo of a truck.']
+Trainable parameters: 14,570,496
+Epoch 0 (pretrained): {'acc_i2t': 0.8898, 'map_t2i': 0.879432, 'score': 0.884616}
+Epoch 1: alpha=0.500 I2T=0.2085 T2I=0.2771 val_acc=0.9570 val_mAP=0.9842 time=36.5s
+Epoch 2: alpha=0.500 I2T=0.1587 T2I=0.1878 val_acc=0.9602 val_mAP=0.9854 time=27.4s
+Epoch 3: alpha=0.500 I2T=0.1382 T2I=0.1640 val_acc=0.9614 val_mAP=0.9851 time=29.2s
+Epoch 4: alpha=0.500 I2T=0.1220 T2I=0.1451 val_acc=0.9592 val_mAP=0.9859 time=30.4s
+Epoch 5: alpha=0.500 I2T=0.1100 T2I=0.1311 val_acc=0.9580 val_mAP=0.9824 time=31.4s
+Saved: runs_s43\fixed_a0.50_s43
+Best validation epoch: 3 {'acc_i2t': 0.9614, 'map_t2i': 0.985133, 'score': 0.973266}
+=== TRAIN fixed alpha=0.7 seed=43 ===
+D:\Program Files\anaconda\Lib\site-packages\torchvision\datasets\cifar.py:83: VisibleDeprecationWarning: dtype(): align should be passed as Python or NumPy boolean but got `align=0`. Did you mean to pass a tuple to create a subarray type? (Deprecated NumPy 2.4)
+  entry = pickle.load(f, encoding="latin1")
+Device=cuda; AMP=True; model=ViT-B-32-quickgelu; pretrained=./weights/open_clip_model.safetensors
+Class prompts: ['a photo of a airplane.', 'a photo of a car.', 'a photo of a bird.', 'a photo of a cat.', 'a photo of a deer.', 'a photo of a dog.', 'a photo of a frog.', 'a photo of a horse.', 'a photo of a ship.', 'a photo of a truck.']
+Trainable parameters: 14,570,496
+Epoch 0 (pretrained): {'acc_i2t': 0.8898, 'map_t2i': 0.879432, 'score': 0.884616}
+Epoch 1: alpha=0.700 I2T=0.2045 T2I=0.2868 val_acc=0.9562 val_mAP=0.9847 time=39.6s
+Epoch 2: alpha=0.700 I2T=0.1564 T2I=0.1931 val_acc=0.9598 val_mAP=0.9855 time=30.1s
+Epoch 3: alpha=0.700 I2T=0.1356 T2I=0.1681 val_acc=0.9610 val_mAP=0.9854 time=31.4s
+Epoch 4: alpha=0.700 I2T=0.1189 T2I=0.1486 val_acc=0.9596 val_mAP=0.9850 time=31.4s
+Epoch 5: alpha=0.700 I2T=0.1066 T2I=0.1340 val_acc=0.9592 val_mAP=0.9823 time=31.7s
+Saved: runs_s43\fixed_a0.70_s43
+Best validation epoch: 3 {'acc_i2t': 0.961, 'map_t2i': 0.985413, 'score': 0.973207}
+=== TRAIN adaptive tau=0.5 seed=43 ===
+D:\Program Files\anaconda\Lib\site-packages\torchvision\datasets\cifar.py:83: VisibleDeprecationWarning: dtype(): align should be passed as Python or NumPy boolean but got `align=0`. Did you mean to pass a tuple to create a subarray type? (Deprecated NumPy 2.4)
+  entry = pickle.load(f, encoding="latin1")
+Device=cuda; AMP=True; model=ViT-B-32-quickgelu; pretrained=./weights/open_clip_model.safetensors
+Class prompts: ['a photo of a airplane.', 'a photo of a car.', 'a photo of a bird.', 'a photo of a cat.', 'a photo of a deer.', 'a photo of a dog.', 'a photo of a frog.', 'a photo of a horse.', 'a photo of a ship.', 'a photo of a truck.']
+Trainable parameters: 14,570,496
+Epoch 0 (pretrained): {'acc_i2t': 0.8898, 'map_t2i': 0.879432, 'score': 0.884616}
+Epoch 1: alpha=0.570 I2T=0.2083 T2I=0.2784 val_acc=0.9568 val_mAP=0.9846 time=40.9s
+Epoch 2: alpha=0.623 I2T=0.1584 T2I=0.1901 val_acc=0.9602 val_mAP=0.9854 time=30.9s
+Epoch 3: alpha=0.622 I2T=0.1374 T2I=0.1658 val_acc=0.9606 val_mAP=0.9855 time=30.8s
+Epoch 4: alpha=0.619 I2T=0.1208 T2I=0.1470 val_acc=0.9588 val_mAP=0.9855 time=32.1s
+Epoch 5: alpha=0.619 I2T=0.1086 T2I=0.1324 val_acc=0.9584 val_mAP=0.9822 time=32.1s
+Saved: runs_s43\adaptive_tau0.50_s43
+Best validation epoch: 3 {'acc_i2t': 0.9606, 'map_t2i': 0.985537, 'score': 0.973068}
+=== TRAIN adaptive tau=1.0 seed=43 ===
+D:\Program Files\anaconda\Lib\site-packages\torchvision\datasets\cifar.py:83: VisibleDeprecationWarning: dtype(): align should be passed as Python or NumPy boolean but got `align=0`. Did you mean to pass a tuple to create a subarray type? (Deprecated NumPy 2.4)
+  entry = pickle.load(f, encoding="latin1")
+Device=cuda; AMP=True; model=ViT-B-32-quickgelu; pretrained=./weights/open_clip_model.safetensors
+Class prompts: ['a photo of a airplane.', 'a photo of a car.', 'a photo of a bird.', 'a photo of a cat.', 'a photo of a deer.', 'a photo of a dog.', 'a photo of a frog.', 'a photo of a horse.', 'a photo of a ship.', 'a photo of a truck.']
+Trainable parameters: 14,570,496
+Epoch 0 (pretrained): {'acc_i2t': 0.8898, 'map_t2i': 0.879432, 'score': 0.884616}
+Epoch 1: alpha=0.536 I2T=0.2084 T2I=0.2776 val_acc=0.9568 val_mAP=0.9845 time=39.6s
+Epoch 2: alpha=0.565 I2T=0.1585 T2I=0.1888 val_acc=0.9604 val_mAP=0.9855 time=30.2s
+Epoch 3: alpha=0.564 I2T=0.1377 T2I=0.1650 val_acc=0.9608 val_mAP=0.9854 time=31.7s
+Epoch 4: alpha=0.564 I2T=0.1214 T2I=0.1457 val_acc=0.9588 val_mAP=0.9856 time=31.4s
+Epoch 5: alpha=0.563 I2T=0.1092 T2I=0.1317 val_acc=0.9580 val_mAP=0.9821 time=32.0s
+Saved: runs_s43\adaptive_tau1.00_s43
+Best validation epoch: 3 {'acc_i2t': 0.9608, 'map_t2i': 0.985402, 'score': 0.973101}
+=== TRAIN adaptive tau=2.0 seed=43 ===
+D:\Program Files\anaconda\Lib\site-packages\torchvision\datasets\cifar.py:83: VisibleDeprecationWarning: dtype(): align should be passed as Python or NumPy boolean but got `align=0`. Did you mean to pass a tuple to create a subarray type? (Deprecated NumPy 2.4)
+  entry = pickle.load(f, encoding="latin1")
+Device=cuda; AMP=True; model=ViT-B-32-quickgelu; pretrained=./weights/open_clip_model.safetensors
+Class prompts: ['a photo of a airplane.', 'a photo of a car.', 'a photo of a bird.', 'a photo of a cat.', 'a photo of a deer.', 'a photo of a dog.', 'a photo of a frog.', 'a photo of a horse.', 'a photo of a ship.', 'a photo of a truck.']
+Trainable parameters: 14,570,496
+Epoch 0 (pretrained): {'acc_i2t': 0.8898, 'map_t2i': 0.879432, 'score': 0.884616}
+Epoch 1: alpha=0.518 I2T=0.2085 T2I=0.2773 val_acc=0.9568 val_mAP=0.9844 time=40.2s
+Epoch 2: alpha=0.533 I2T=0.1586 T2I=0.1882 val_acc=0.9604 val_mAP=0.9854 time=31.8s
+Epoch 3: alpha=0.533 I2T=0.1379 T2I=0.1644 val_acc=0.9610 val_mAP=0.9853 time=31.7s
+Epoch 4: alpha=0.532 I2T=0.1217 T2I=0.1454 val_acc=0.9586 val_mAP=0.9858 time=32.0s
+Epoch 5: alpha=0.533 I2T=0.1096 T2I=0.1310 val_acc=0.9582 val_mAP=0.9818 time=31.5s
+Saved: runs_s43\adaptive_tau2.00_s43
+Best validation epoch: 3 {'acc_i2t': 0.961, 'map_t2i': 0.985313, 'score': 0.973156}
+=== TRAIN fixed alpha=0.3 seed=44 ===
+D:\Program Files\anaconda\Lib\site-packages\torchvision\datasets\cifar.py:83: VisibleDeprecationWarning: dtype(): align should be passed as Python or NumPy boolean but got `align=0`. Did you mean to pass a tuple to create a subarray type? (Deprecated NumPy 2.4)
+  entry = pickle.load(f, encoding="latin1")
+Device=cuda; AMP=True; model=ViT-B-32-quickgelu; pretrained=./weights/open_clip_model.safetensors
+Class prompts: ['a photo of a airplane.', 'a photo of a car.', 'a photo of a bird.', 'a photo of a cat.', 'a photo of a deer.', 'a photo of a dog.', 'a photo of a frog.', 'a photo of a horse.', 'a photo of a ship.', 'a photo of a truck.']
+Trainable parameters: 14,570,496
+Epoch 0 (pretrained): {'acc_i2t': 0.8878, 'map_t2i': 0.881234, 'score': 0.884517}
+Epoch 1: alpha=0.300 I2T=0.2135 T2I=0.2763 val_acc=0.9528 val_mAP=0.9837 time=40.8s
+Epoch 2: alpha=0.300 I2T=0.1604 T2I=0.1903 val_acc=0.9594 val_mAP=0.9869 time=31.2s
+Epoch 3: alpha=0.300 I2T=0.1394 T2I=0.1652 val_acc=0.9616 val_mAP=0.9857 time=31.1s
+Epoch 4: alpha=0.300 I2T=0.1252 T2I=0.1454 val_acc=0.9624 val_mAP=0.9806 time=31.4s
+Epoch 5: alpha=0.300 I2T=0.1127 T2I=0.1324 val_acc=0.9620 val_mAP=0.9874 time=31.7s
+Saved: runs_s44\fixed_a0.30_s44
+Best validation epoch: 5 {'acc_i2t': 0.962, 'map_t2i': 0.987446, 'score': 0.974723}
+=== TRAIN fixed alpha=0.5 seed=44 ===
+D:\Program Files\anaconda\Lib\site-packages\torchvision\datasets\cifar.py:83: VisibleDeprecationWarning: dtype(): align should be passed as Python or NumPy boolean but got `align=0`. Did you mean to pass a tuple to create a subarray type? (Deprecated NumPy 2.4)
+  entry = pickle.load(f, encoding="latin1")
+Device=cuda; AMP=True; model=ViT-B-32-quickgelu; pretrained=./weights/open_clip_model.safetensors
+Class prompts: ['a photo of a airplane.', 'a photo of a car.', 'a photo of a bird.', 'a photo of a cat.', 'a photo of a deer.', 'a photo of a dog.', 'a photo of a frog.', 'a photo of a horse.', 'a photo of a ship.', 'a photo of a truck.']
+Trainable parameters: 14,570,496
+Epoch 0 (pretrained): {'acc_i2t': 0.8878, 'map_t2i': 0.881234, 'score': 0.884517}
+Epoch 1: alpha=0.500 I2T=0.2096 T2I=0.2772 val_acc=0.9552 val_mAP=0.9842 time=43.4s
+Epoch 2: alpha=0.500 I2T=0.1586 T2I=0.1907 val_acc=0.9592 val_mAP=0.9863 time=34.8s
+Epoch 3: alpha=0.500 I2T=0.1372 T2I=0.1655 val_acc=0.9618 val_mAP=0.9854 time=29.5s
+Epoch 4: alpha=0.500 I2T=0.1228 T2I=0.1454 val_acc=0.9612 val_mAP=0.9814 time=28.1s
+Epoch 5: alpha=0.500 I2T=0.1099 T2I=0.1323 val_acc=0.9610 val_mAP=0.9867 time=27.6s
+Saved: runs_s44\fixed_a0.50_s44
+Best validation epoch: 5 {'acc_i2t': 0.961, 'map_t2i': 0.986721, 'score': 0.973861}
+=== TRAIN fixed alpha=0.7 seed=44 ===
+D:\Program Files\anaconda\Lib\site-packages\torchvision\datasets\cifar.py:83: VisibleDeprecationWarning: dtype(): align should be passed as Python or NumPy boolean but got `align=0`. Did you mean to pass a tuple to create a subarray type? (Deprecated NumPy 2.4)
+  entry = pickle.load(f, encoding="latin1")
+Device=cuda; AMP=True; model=ViT-B-32-quickgelu; pretrained=./weights/open_clip_model.safetensors
+Class prompts: ['a photo of a airplane.', 'a photo of a car.', 'a photo of a bird.', 'a photo of a cat.', 'a photo of a deer.', 'a photo of a dog.', 'a photo of a frog.', 'a photo of a horse.', 'a photo of a ship.', 'a photo of a truck.']
+Trainable parameters: 14,570,496
+Epoch 0 (pretrained): {'acc_i2t': 0.8878, 'map_t2i': 0.881234, 'score': 0.884517}
+Epoch 1: alpha=0.700 I2T=0.2056 T2I=0.2875 val_acc=0.9560 val_mAP=0.9847 time=35.4s
+Epoch 2: alpha=0.700 I2T=0.1562 T2I=0.1960 val_acc=0.9600 val_mAP=0.9860 time=27.5s
+Epoch 3: alpha=0.700 I2T=0.1343 T2I=0.1696 val_acc=0.9622 val_mAP=0.9852 time=27.5s
+Epoch 4: alpha=0.700 I2T=0.1196 T2I=0.1490 val_acc=0.9612 val_mAP=0.9811 time=27.5s
+Epoch 5: alpha=0.700 I2T=0.1061 T2I=0.1350 val_acc=0.9612 val_mAP=0.9851 time=28.2s
+Saved: runs_s44\fixed_a0.70_s44
+Best validation epoch: 3 {'acc_i2t': 0.9622, 'map_t2i': 0.985243, 'score': 0.973722}
+=== TRAIN adaptive tau=0.5 seed=44 ===
+D:\Program Files\anaconda\Lib\site-packages\torchvision\datasets\cifar.py:83: VisibleDeprecationWarning: dtype(): align should be passed as Python or NumPy boolean but got `align=0`. Did you mean to pass a tuple to create a subarray type? (Deprecated NumPy 2.4)
+  entry = pickle.load(f, encoding="latin1")
+Device=cuda; AMP=True; model=ViT-B-32-quickgelu; pretrained=./weights/open_clip_model.safetensors
+Class prompts: ['a photo of a airplane.', 'a photo of a car.', 'a photo of a bird.', 'a photo of a cat.', 'a photo of a deer.', 'a photo of a dog.', 'a photo of a frog.', 'a photo of a horse.', 'a photo of a ship.', 'a photo of a truck.']
+Trainable parameters: 14,570,496
+Epoch 0 (pretrained): {'acc_i2t': 0.8878, 'map_t2i': 0.881234, 'score': 0.884517}
+Epoch 1: alpha=0.590 I2T=0.2094 T2I=0.2798 val_acc=0.9560 val_mAP=0.9845 time=39.6s
+Epoch 2: alpha=0.634 I2T=0.1580 T2I=0.1933 val_acc=0.9594 val_mAP=0.9859 time=29.3s
+Epoch 3: alpha=0.630 I2T=0.1360 T2I=0.1679 val_acc=0.9628 val_mAP=0.9856 time=29.3s
+Epoch 4: alpha=0.638 I2T=0.1215 T2I=0.1475 val_acc=0.9606 val_mAP=0.9811 time=27.5s
+Epoch 5: alpha=0.631 I2T=0.1080 T2I=0.1337 val_acc=0.9612 val_mAP=0.9856 time=27.7s
+Saved: runs_s44\adaptive_tau0.50_s44
+Best validation epoch: 3 {'acc_i2t': 0.9628, 'map_t2i': 0.985607, 'score': 0.974203}
+=== TRAIN adaptive tau=1.0 seed=44 ===
+D:\Program Files\anaconda\Lib\site-packages\torchvision\datasets\cifar.py:83: VisibleDeprecationWarning: dtype(): align should be passed as Python or NumPy boolean but got `align=0`. Did you mean to pass a tuple to create a subarray type? (Deprecated NumPy 2.4)
+  entry = pickle.load(f, encoding="latin1")
+Device=cuda; AMP=True; model=ViT-B-32-quickgelu; pretrained=./weights/open_clip_model.safetensors
+Class prompts: ['a photo of a airplane.', 'a photo of a car.', 'a photo of a bird.', 'a photo of a cat.', 'a photo of a deer.', 'a photo of a dog.', 'a photo of a frog.', 'a photo of a horse.', 'a photo of a ship.', 'a photo of a truck.']
+Trainable parameters: 14,570,496
+Epoch 0 (pretrained): {'acc_i2t': 0.8878, 'map_t2i': 0.881234, 'score': 0.884517}
+Epoch 1: alpha=0.547 I2T=0.2095 T2I=0.2784 val_acc=0.9556 val_mAP=0.9843 time=38.0s
+Epoch 2: alpha=0.571 I2T=0.1583 T2I=0.1918 val_acc=0.9592 val_mAP=0.9861 time=31.4s
+Epoch 3: alpha=0.569 I2T=0.1366 T2I=0.1666 val_acc=0.9628 val_mAP=0.9857 time=31.3s
+Epoch 4: alpha=0.573 I2T=0.1221 T2I=0.1464 val_acc=0.9608 val_mAP=0.9809 time=30.8s
+Epoch 5: alpha=0.570 I2T=0.1088 T2I=0.1326 val_acc=0.9608 val_mAP=0.9862 time=30.7s
+Saved: runs_s44\adaptive_tau1.00_s44
+Best validation epoch: 3 {'acc_i2t': 0.9628, 'map_t2i': 0.985745, 'score': 0.974272}
+=== TRAIN adaptive tau=2.0 seed=44 ===
+D:\Program Files\anaconda\Lib\site-packages\torchvision\datasets\cifar.py:83: VisibleDeprecationWarning: dtype(): align should be passed as Python or NumPy boolean but got `align=0`. Did you mean to pass a tuple to create a subarray type? (Deprecated NumPy 2.4)
+  entry = pickle.load(f, encoding="latin1")
+Device=cuda; AMP=True; model=ViT-B-32-quickgelu; pretrained=./weights/open_clip_model.safetensors
+Class prompts: ['a photo of a airplane.', 'a photo of a car.', 'a photo of a bird.', 'a photo of a cat.', 'a photo of a deer.', 'a photo of a dog.', 'a photo of a frog.', 'a photo of a horse.', 'a photo of a ship.', 'a photo of a truck.']
+Trainable parameters: 14,570,496
+Epoch 0 (pretrained): {'acc_i2t': 0.8878, 'map_t2i': 0.881234, 'score': 0.884517}
+Epoch 1: alpha=0.524 I2T=0.2096 T2I=0.2779 val_acc=0.9558 val_mAP=0.9844 time=38.6s
+Epoch 2: alpha=0.536 I2T=0.1584 T2I=0.1912 val_acc=0.9594 val_mAP=0.9862 time=30.7s
+Epoch 3: alpha=0.536 I2T=0.1369 T2I=0.1659 val_acc=0.9618 val_mAP=0.9854 time=30.2s
+Epoch 4: alpha=0.538 I2T=0.1224 T2I=0.1458 val_acc=0.9612 val_mAP=0.9811 time=30.5s
+Epoch 5: alpha=0.536 I2T=0.1093 T2I=0.1324 val_acc=0.9610 val_mAP=0.9863 time=29.4s
+Saved: runs_s44\adaptive_tau2.00_s44
+Best validation epoch: 5 {'acc_i2t': 0.961, 'map_t2i': 0.986339, 'score': 0.973669}
+=== EVAL robustness seed=43 ===
+D:\Program Files\anaconda\Lib\site-packages\torchvision\datasets\cifar.py:83: VisibleDeprecationWarning: dtype(): align should be passed as Python or NumPy boolean but got `align=0`. Did you mean to pass a tuple to create a subarray type? (Deprecated NumPy 2.4)
+  entry = pickle.load(f, encoding="latin1")
+Found 6 experiment summaries.
+  [OK     ] adaptive_tau0.50_s43/best.pt
+  [OK     ] adaptive_tau1.00_s43/best.pt
+  [OK     ] adaptive_tau2.00_s43/best.pt
+  [OK     ] fixed_a0.30_s43/best.pt
+  [OK     ] fixed_a0.50_s43/best.pt
+  [OK     ] fixed_a0.70_s43/best.pt
+Ready to evaluate: 6
+Device: cuda | AMP: True | Dataset split: val | per class: 500
+Pretrained base: ./weights/open_clip_model.safetensors
+Model: ViT-B-32-quickgelu
+Selected 5000 images, labels/class: 500
+
+Experiment: adaptive_tau0.50_s43
+  clean   | I2T  96.060% (197 wrong) | T2I mAP  98.554%
+  noise1  | I2T  78.900% (1055 wrong) | T2I mAP  86.884%
+  noise2  | I2T  41.080% (2946 wrong) | T2I mAP  50.992%
+  blur1   | I2T  93.360% (332 wrong) | T2I mAP  96.955%
+  blur2   | I2T  70.560% (1472 wrong) | T2I mAP  79.763%
+
+Experiment: adaptive_tau1.00_s43
+  clean   | I2T  96.080% (196 wrong) | T2I mAP  98.540%
+  noise1  | I2T  79.100% (1045 wrong) | T2I mAP  86.853%
+  noise2  | I2T  41.200% (2940 wrong) | T2I mAP  50.964%
+  blur1   | I2T  93.460% (327 wrong) | T2I mAP  96.977%
+  blur2   | I2T  70.740% (1463 wrong) | T2I mAP  79.759%
+
+Experiment: adaptive_tau2.00_s43
+  clean   | I2T  96.100% (195 wrong) | T2I mAP  98.531%
+  noise1  | I2T  79.200% (1040 wrong) | T2I mAP  86.823%
+  noise2  | I2T  41.200% (2940 wrong) | T2I mAP  50.915%
+  blur1   | I2T  93.480% (326 wrong) | T2I mAP  96.947%
+  blur2   | I2T  70.700% (1465 wrong) | T2I mAP  79.734%
+
+Experiment: fixed_a0.30_s43
+  clean   | I2T  96.260% (187 wrong) | T2I mAP  98.481%
+  noise1  | I2T  79.260% (1037 wrong) | T2I mAP  86.768%
+  noise2  | I2T  41.900% (2905 wrong) | T2I mAP  50.907%
+  blur1   | I2T  93.540% (323 wrong) | T2I mAP  96.889%
+  blur2   | I2T  70.960% (1452 wrong) | T2I mAP  79.532%
+
+Experiment: fixed_a0.50_s43
+  clean   | I2T  96.140% (193 wrong) | T2I mAP  98.513%
+  noise1  | I2T  79.180% (1041 wrong) | T2I mAP  86.777%
+  noise2  | I2T  41.400% (2930 wrong) | T2I mAP  51.015%
+  blur1   | I2T  93.500% (325 wrong) | T2I mAP  96.924%
+  blur2   | I2T  70.700% (1465 wrong) | T2I mAP  79.857%
+
+Experiment: fixed_a0.70_s43
+  clean   | I2T  96.100% (195 wrong) | T2I mAP  98.541%
+  noise1  | I2T  78.740% (1063 wrong) | T2I mAP  86.854%
+  noise2  | I2T  40.800% (2960 wrong) | T2I mAP  50.936%
+  blur1   | I2T  93.280% (336 wrong) | T2I mAP  96.940%
+  blur2   | I2T  70.360% (1482 wrong) | T2I mAP  79.797%
+
+Finished: 30 run-condition evaluations (5000 images each)
+All tables and charts saved to: D:\Sept\学习\专业课\前沿\Adaptative-α\robustness_results_s43
+=== EVAL robustness seed=44 ===
+D:\Program Files\anaconda\Lib\site-packages\torchvision\datasets\cifar.py:83: VisibleDeprecationWarning: dtype(): align should be passed as Python or NumPy boolean but got `align=0`. Did you mean to pass a tuple to create a subarray type? (Deprecated NumPy 2.4)
+  entry = pickle.load(f, encoding="latin1")
+Found 6 experiment summaries.
+  [OK     ] adaptive_tau0.50_s44/best.pt
+  [OK     ] adaptive_tau1.00_s44/best.pt
+  [OK     ] adaptive_tau2.00_s44/best.pt
+  [OK     ] fixed_a0.30_s44/best.pt
+  [OK     ] fixed_a0.50_s44/best.pt
+  [OK     ] fixed_a0.70_s44/best.pt
+Ready to evaluate: 6
+Device: cuda | AMP: True | Dataset split: val | per class: 500
+Pretrained base: ./weights/open_clip_model.safetensors
+Model: ViT-B-32-quickgelu
+Selected 5000 images, labels/class: 500
+
+Experiment: adaptive_tau0.50_s44
+  clean   | I2T  96.280% (186 wrong) | T2I mAP  98.561%
+  noise1  | I2T  79.900% (1005 wrong) | T2I mAP  88.482%
+  noise2  | I2T  42.100% (2895 wrong) | T2I mAP  54.445%
+  blur1   | I2T  93.800% (310 wrong) | T2I mAP  97.080%
+  blur2   | I2T  70.860% (1457 wrong) | T2I mAP  81.294%
+
+Experiment: adaptive_tau1.00_s44
+  clean   | I2T  96.280% (186 wrong) | T2I mAP  98.574%
+  noise1  | I2T  79.760% (1012 wrong) | T2I mAP  88.471%
+  noise2  | I2T  41.960% (2902 wrong) | T2I mAP  54.299%
+  blur1   | I2T  93.740% (313 wrong) | T2I mAP  97.086%
+  blur2   | I2T  70.820% (1459 wrong) | T2I mAP  81.340%
+
+Experiment: adaptive_tau2.00_s44
+  clean   | I2T  96.100% (195 wrong) | T2I mAP  98.634%
+  noise1  | I2T  78.760% (1062 wrong) | T2I mAP  87.124%
+  noise2  | I2T  42.160% (2892 wrong) | T2I mAP  52.716%
+  blur1   | I2T  93.680% (316 wrong) | T2I mAP  96.705%
+  blur2   | I2T  70.620% (1469 wrong) | T2I mAP  80.843%
+
+Experiment: fixed_a0.30_s44
+  clean   | I2T  96.200% (190 wrong) | T2I mAP  98.745%
+  noise1  | I2T  78.720% (1064 wrong) | T2I mAP  87.263%
+  noise2  | I2T  42.140% (2893 wrong) | T2I mAP  52.576%
+  blur1   | I2T  93.620% (319 wrong) | T2I mAP  96.860%
+  blur2   | I2T  70.980% (1451 wrong) | T2I mAP  80.910%
+
+Experiment: fixed_a0.50_s44
+  clean   | I2T  96.100% (195 wrong) | T2I mAP  98.672%
+  noise1  | I2T  78.660% (1067 wrong) | T2I mAP  87.090%
+  noise2  | I2T  42.080% (2896 wrong) | T2I mAP  52.818%
+  blur1   | I2T  93.620% (319 wrong) | T2I mAP  96.834%
+  blur2   | I2T  70.800% (1460 wrong) | T2I mAP  80.979%
+
+Experiment: fixed_a0.70_s44
+  clean   | I2T  96.220% (189 wrong) | T2I mAP  98.524%
+  noise1  | I2T  80.200% (990 wrong) | T2I mAP  88.581%
+  noise2  | I2T  42.200% (2890 wrong) | T2I mAP  54.666%
+  blur1   | I2T  93.760% (312 wrong) | T2I mAP  96.985%
+  blur2   | I2T  70.720% (1464 wrong) | T2I mAP  81.151%
+
+Finished: 30 run-condition evaluations (5000 images each)
+All tables and charts saved to: D:\Sept\学习\专业课\前沿\Adaptative-α\robustness_results_s44
+ALL DONE

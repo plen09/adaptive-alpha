@@ -1,0 +1,47 @@
+{
+  "method": "probe_meta",
+  "seed": 42,
+  "alpha_fixed": null,
+  "tau": null,
+  "best_epoch": 5,
+  "pretrained_validation": {
+    "acc_i2t": 0.8846,
+    "map_t2i": 0.879003,
+    "score": 0.881802
+  },
+  "best_validation": {
+    "acc_i2t": 0.9664,
+    "map_t2i": 0.988059,
+    "score": 0.97723
+  },
+  "checkpoint": "runs_meta_eta0.5_s42\\probe_meta_s42\\best.pt",
+  "settings": {
+    "controller": "probe",
+    "model": "ViT-B-32-quickgelu",
+    "pretrained": "./weights/open_clip_model.safetensors",
+    "data_dir": "./data",
+    "out_dir": "runs_meta_eta0.5_s42",
+    "epochs": 5,
+    "batch_size": 64,
+    "workers": 2,
+    "lr": 1e-05,
+    "weight_decay": 0.05,
+    "train_blocks": 2,
+    "alpha": 0.5,
+    "probe_per_class": 100,
+    "probe_batch": 128,
+    "probe_every": 50,
+    "probe_condition": "noise1",
+    "probe_noise_weight": 0.5,
+    "eta_alpha": 0.5,
+    "delta_ema": 0.9,
+    "warmup_steps": 100,
+    "min_alpha": 0.2,
+    "max_alpha": 0.8,
+    "seed": 42,
+    "device": "auto",
+    "no_amp": false,
+    "max_train_batches": null,
+    "self_test": false
+  }
+}

@@ -1,0 +1,7 @@
+﻿group,n_runs,seeds,best_acc_mean,best_acc_std,best_error_count_mean,best_error_count_std,best_map_mean,best_map_std,best_map_gap_pp_mean,best_map_gap_pp_std,best_score_mean,best_score_std,alpha_mean_across_runs,train_seconds_mean
+adaptive_t0.50,1,43,0.9606,,197,,0.985537,,1.4463,,0.973068,,0.610528603,166.85
+adaptive_t1.00,1,43,0.9608,,196,,0.985402,,1.4598,,0.973101,,0.558170673,164.81
+adaptive_t2.00,1,43,0.961,,195,,0.985313,,1.4687,,0.973156,,0.529719146,167.14
+fixed_a0.30,1,43,0.9626,,187,,0.984813,,1.5187,,0.973706,,0.3,159.23
+fixed_a0.50,1,43,0.9614,,193,,0.985133,,1.4867,,0.973266,,0.5,154.82
+fixed_a0.70,1,43,0.961,,195,,0.985413,,1.4587,,0.973207,,0.7,164.31

@@ -1,0 +1,11 @@
+# Model checkpoints (.pt excluded from the repo per project policy)
+*.pt
+
+# Downloadable assets — too large for GitHub (dataset 341 MB, CLIP weights 577 MB)
+# CIFAR-10 is re-downloaded automatically by the scripts; CLIP weights are fetched from HuggingFace.
+data/
+weights/
+
+# Python caches
+__pycache__/
+*.pyc

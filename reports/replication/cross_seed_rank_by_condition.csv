@@ -1,0 +1,16 @@
+﻿condition,seed,rank,acc,best,worst,spread_pp
+clean,42,fixed_a0.30;fixed_a0.50;adaptive_tau2.00;fixed_a0.70;adaptive_tau1.00;adaptive_tau0.50,0.9646;0.9646;0.9642;0.9640;0.9638;0.9636,fixed_a0.30,adaptive_tau0.50,0.1
+clean,43,fixed_a0.30;fixed_a0.50;fixed_a0.70;adaptive_tau2.00;adaptive_tau1.00;adaptive_tau0.50,0.9626;0.9614;0.9610;0.9610;0.9608;0.9606,fixed_a0.30,adaptive_tau0.50,0.2
+clean,44,adaptive_tau0.50;adaptive_tau1.00;fixed_a0.70;fixed_a0.30;fixed_a0.50;adaptive_tau2.00,0.9628;0.9628;0.9622;0.9620;0.9610;0.9610,adaptive_tau0.50,adaptive_tau2.00,0.18
+noise1,42,fixed_a0.30;adaptive_tau2.00;fixed_a0.50;adaptive_tau1.00;adaptive_tau0.50;fixed_a0.70,0.8046;0.8020;0.8016;0.8014;0.7998;0.7968,fixed_a0.30,fixed_a0.70,0.78
+noise1,43,fixed_a0.30;adaptive_tau2.00;fixed_a0.50;adaptive_tau1.00;adaptive_tau0.50;fixed_a0.70,0.7926;0.7920;0.7918;0.7910;0.7890;0.7874,fixed_a0.30,fixed_a0.70,0.52
+noise1,44,fixed_a0.70;adaptive_tau0.50;adaptive_tau1.00;adaptive_tau2.00;fixed_a0.30;fixed_a0.50,0.8020;0.7990;0.7976;0.7876;0.7872;0.7866,fixed_a0.70,fixed_a0.50,1.54
+noise2,42,fixed_a0.30;fixed_a0.50;adaptive_tau2.00;adaptive_tau1.00;adaptive_tau0.50;fixed_a0.70,0.4426;0.4326;0.4308;0.4292;0.4276;0.4228,fixed_a0.30,fixed_a0.70,1.98
+noise2,43,fixed_a0.30;fixed_a0.50;adaptive_tau1.00;adaptive_tau2.00;adaptive_tau0.50;fixed_a0.70,0.4190;0.4140;0.4120;0.4120;0.4108;0.4080,fixed_a0.30,fixed_a0.70,1.1
+noise2,44,fixed_a0.70;adaptive_tau2.00;fixed_a0.30;adaptive_tau0.50;fixed_a0.50;adaptive_tau1.00,0.4220;0.4216;0.4214;0.4210;0.4208;0.4196,fixed_a0.70,adaptive_tau1.00,0.24
+blur1,42,fixed_a0.30;fixed_a0.50;adaptive_tau2.00;adaptive_tau1.00;adaptive_tau0.50;fixed_a0.70,0.9380;0.9364;0.9358;0.9352;0.9346;0.9334,fixed_a0.30,fixed_a0.70,0.46
+blur1,43,fixed_a0.30;fixed_a0.50;adaptive_tau2.00;adaptive_tau1.00;adaptive_tau0.50;fixed_a0.70,0.9354;0.9350;0.9348;0.9346;0.9336;0.9328,fixed_a0.30,fixed_a0.70,0.26
+blur1,44,adaptive_tau0.50;fixed_a0.70;adaptive_tau1.00;adaptive_tau2.00;fixed_a0.30;fixed_a0.50,0.9380;0.9376;0.9374;0.9368;0.9362;0.9362,adaptive_tau0.50,fixed_a0.50,0.18
+blur2,42,fixed_a0.30;fixed_a0.50;adaptive_tau1.00;adaptive_tau2.00;adaptive_tau0.50;fixed_a0.70,0.7088;0.7078;0.7072;0.7072;0.7056;0.7046,fixed_a0.30,fixed_a0.70,0.42
+blur2,43,fixed_a0.30;adaptive_tau1.00;fixed_a0.50;adaptive_tau2.00;adaptive_tau0.50;fixed_a0.70,0.7096;0.7074;0.7070;0.7070;0.7056;0.7036,fixed_a0.30,fixed_a0.70,0.6
+blur2,44,fixed_a0.30;adaptive_tau0.50;adaptive_tau1.00;fixed_a0.50;fixed_a0.70;adaptive_tau2.00,0.7098;0.7086;0.7082;0.7080;0.7072;0.7062,fixed_a0.30,adaptive_tau2.00,0.36

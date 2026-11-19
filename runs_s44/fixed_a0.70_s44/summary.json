@@ -1,0 +1,44 @@
+{
+  "method": "fixed",
+  "seed": 44,
+  "alpha_fixed": 0.7,
+  "tau": null,
+  "best_epoch": 3,
+  "pretrained_validation": {
+    "acc_i2t": 0.8878,
+    "map_t2i": 0.881234,
+    "score": 0.884517
+  },
+  "best_validation": {
+    "acc_i2t": 0.9622,
+    "map_t2i": 0.985243,
+    "score": 0.973722
+  },
+  "checkpoint": "runs_s44\\fixed_a0.70_s44\\best.pt",
+  "settings": {
+    "mode": "fixed",
+    "model": "ViT-B-32-quickgelu",
+    "pretrained": "./weights/open_clip_model.safetensors",
+    "data_dir": "./data",
+    "out_dir": "runs_s44",
+    "checkpoint": null,
+    "epochs": 5,
+    "batch_size": 64,
+    "workers": 2,
+    "lr": 1e-05,
+    "weight_decay": 0.05,
+    "train_blocks": 2,
+    "alpha": 0.7,
+    "tau": 1.0,
+    "warmup_steps": 100,
+    "loss_ema": 0.98,
+    "alpha_update": 0.05,
+    "min_alpha": 0.2,
+    "max_alpha": 0.8,
+    "seed": 44,
+    "device": "auto",
+    "no_amp": false,
+    "eval_test": false,
+    "max_train_batches": null
+  }
+}
